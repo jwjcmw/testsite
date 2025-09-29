@@ -1,1 +1,287 @@
-This is the site.
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Julie Wright Land Company</title>
+  <meta name="description" content="Boutique land brokerage serving North Carolina with expertise in rural, recreational, farm, and development properties." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: {
+              50:  '#f1f7f3',
+              100: '#e3efe7',
+              200: '#c3e0cd',
+              300: '#9fceb0',
+              400: '#71cc98',
+              500: '#4dae7b',
+              600: '#388d61',
+              700: '#2e6f4d',
+              800: '#25583e',
+              900: '#1d4632',
+            }
+          },
+          boxShadow: {
+            soft: '0 8px 24px rgba(0,0,0,0.08)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .section-clip { clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%); }
+  </style>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3 group" aria-label="Julie Wright Land Company home">
+        <!-- SVG Logo -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 42" class="h-8 w-auto">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#71cc98"/>
+              <stop offset="100%" stop-color="#2e6f4d"/>
+            </linearGradient>
+          </defs>
+          <!-- Mark: rolling hill + tree -->
+          <g transform="translate(0,4)">
+            <path d="M0 22 Q 30 4 60 18 T 120 18 T 180 10 L 180 34 L 0 34 Z" fill="url(#g1)" opacity="0.9"/>
+            <path d="M54 6 q2 -6 6 0 q4 6 -6 16 q-10 -10 -6 -16 z" fill="#2e6f4d"/>
+            <rect x="58.5" y="16" width="3" height="9" rx="1.5" fill="#2e6f4d"/>
+          </g>
+          <!-- Wordmark -->
+          <g transform="translate(4,0)">
+            <text x="72" y="28" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="16" fill="#1d4632">JULIE WRIGHT</text>
+            <text x="72" y="40" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="12" fill="#2e6f4d">LAND COMPANY</text>
+          </g>
+        </svg>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#listings" class="hover:text-brand-700">Listings</a>
+        <a href="#services" class="hover:text-brand-700">Services</a>
+        <a href="#about" class="hover:text-brand-700">About</a>
+        <a href="#contact" class="hover:text-brand-700">Contact</a>
+      </nav>
+      <a href="#contact" class="inline-flex items-center rounded-full bg-brand-600 text-white text-sm font-semibold px-4 py-2 shadow-soft hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-600">Consultation</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative section-clip">
+    <div class="absolute inset-0 -z-10">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1920&auto=format&fit=crop" alt="Rolling farmland at sunrise" class="w-full h-full object-cover"/>
+      <div class="absolute inset-0 bg-slate-900/40"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 text-white">
+      <div class="max-w-2xl">
+        <p class="uppercase tracking-widest text-brand-200 text-xs">North Carolina Land Brokerage</p>
+        <h1 class="mt-3 text-4xl sm:text-5xl font-extrabold leading-tight">Acquire, market, and steward land with confidence.</h1>
+        <p class="mt-4 text-white/90 text-lg">Boutique representation for rural, recreational, farm, and development properties across the Triangle and beyond.</p>
+        <div class="mt-8 flex gap-3">
+          <a href="#listings" class="inline-flex items-center rounded-full bg-white text-slate-900 px-5 py-3 font-semibold hover:bg-slate-100">Browse Listings</a>
+          <a href="#contact" class="inline-flex items-center rounded-full border border-white/70 px-5 py-3 font-semibold hover:bg-white/10">List Your Property</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Listings -->
+  <section id="listings" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Featured Listings</h2>
+          <p class="mt-2 text-slate-600">Representative properties. Replace with live data when ready.</p>
+        </div>
+        <a href="#contact" class="hidden sm:inline-flex items-center text-brand-700 font-semibold">See all &rarr;</a>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card -->
+        <article class="bg-white rounded-2xl overflow-hidden shadow-soft">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1469796466635-455ede028aca?q=80&w=1200&auto=format&fit=crop" alt="Wooded acreage with pond" class="h-48 w-full object-cover"/>
+            <span class="absolute top-3 left-3 bg-brand-600 text-white text-xs font-semibold px-2.5 py-1 rounded-full">For Sale</span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold">54± Acres · Granville County</h3>
+            <p class="mt-1 text-slate-600">Timber, pond, internal trails, ideal for recreation or homesite.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-slate-900 font-bold">$389,000</span>
+              <a href="#contact" class="text-brand-700 font-semibold hover:underline">Inquire</a>
+            </div>
+          </div>
+        </article>
+        <article class="bg-white rounded-2xl overflow-hidden shadow-soft">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop" alt="Open pasture with fence" class="h-48 w-full object-cover"/>
+            <span class="absolute top-3 left-3 bg-brand-600 text-white text-xs font-semibold px-2.5 py-1 rounded-full">Under Contract</span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold">22± Acres · Chatham County</h3>
+            <p class="mt-1 text-slate-600">Gently rolling pasture with mature hedgerows and road frontage.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-slate-900 font-bold">$249,000</span>
+              <a href="#contact" class="text-brand-700 font-semibold hover:underline">Inquire</a>
+            </div>
+          </div>
+        </article>
+        <article class="bg-white rounded-2xl overflow-hidden shadow-soft">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1608319916731-e9d50a9cc7cf?q=80&w=1200&auto=format&fit=crop" alt="Farmhouse and fields" class="h-48 w-full object-cover"/>
+            <span class="absolute top-3 left-3 bg-brand-600 text-white text-xs font-semibold px-2.5 py-1 rounded-full">Sold</span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold">12± Acres · Franklin County</h3>
+            <p class="mt-1 text-slate-600">Classic homesite potential close to US‑1. Soil work on file.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-slate-900 font-bold">Confidential</span>
+              <a href="#contact" class="text-brand-700 font-semibold hover:underline">Inquire</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-2xl sm:text-3xl font-bold">What we do</h2>
+        <p class="mt-2 text-slate-600">Full‑service brokerage tailored to land.</p>
+      </div>
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-slate-200 p-6">
+          <div class="h-10 w-10 rounded-xl bg-brand-50 text-brand-800 grid place-content-center font-bold">1</div>
+          <h3 class="mt-4 font-semibold">Buyer Representation</h3>
+          <p class="mt-1 text-slate-600">Search strategy, due diligence, soil and access review, negotiations.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-6">
+          <div class="h-10 w-10 rounded-xl bg-brand-50 text-brand-800 grid place-content-center font-bold">2</div>
+          <h3 class="mt-4 font-semibold">Seller Marketing</h3>
+          <p class="mt-1 text-slate-600">Valuation, positioning, targeted outreach, premium visuals, MLS + land portals.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-6">
+          <div class="h-10 w-10 rounded-xl bg-brand-50 text-brand-800 grid place-content-center font-bold">3</div>
+          <h3 class="mt-4 font-semibold">Consulting</h3>
+          <p class="mt-1 text-slate-600">Subdivision paths, conservation, highest and best use, light entitlement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+      <img src="https://images.unsplash.com/photo-1520975922215-cf1bd67f14c1?q=80&w=1200&auto=format&fit=crop" alt="North Carolina countryside" class="rounded-3xl shadow-soft w-full h-80 object-cover"/>
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold">About Julie Wright Land Company</h2>
+        <p class="mt-3 text-slate-700">Independent North Carolina brokerage focused on land. We combine local expertise with disciplined process to help clients buy and sell rural, recreational, farm, and development tracts.</p>
+        <ul class="mt-4 space-y-2 text-slate-700">
+          <li class="flex gap-3"><span class="text-brand-700">•</span> Triangle, Triad, and surrounding counties</li>
+          <li class="flex gap-3"><span class="text-brand-700">•</span> Clear communication from first call to closing</li>
+          <li class="flex gap-3"><span class="text-brand-700">•</span> Network of surveyors, soil scientists, and builders</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA ribbon -->
+  <section class="py-12 bg-brand-700 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <p class="text-lg font-semibold">Thinking about buying or selling land?</p>
+      <a href="#contact" class="inline-flex items-center rounded-full bg-white text-brand-800 px-5 py-3 font-semibold hover:bg-slate-100">Start the conversation</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-2xl sm:text-3xl font-bold">Contact</h2>
+        <p class="mt-2 text-slate-600">Reach out for a no‑pressure consultation.</p>
+      </div>
+
+      <div class="mt-10 grid lg:grid-cols-2 gap-10">
+        <div class="rounded-3xl border border-slate-200 p-6">
+          <form class="grid grid-cols-1 gap-4" onsubmit="event.preventDefault(); alert('Form submission placeholder. Replace with your backend.');">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <label class="block">
+                <span class="text-sm font-medium">Name</span>
+                <input required type="text" class="mt-1 block w-full rounded-xl border-slate-300 focus:border-brand-600 focus:ring-brand-600" placeholder="Your name" />
+              </label>
+              <label class="block">
+                <span class="text-sm font-medium">Email</span>
+                <input required type="email" class="mt-1 block w-full rounded-xl border-slate-300 focus:border-brand-600 focus:ring-brand-600" placeholder="you@example.com" />
+              </label>
+            </div>
+            <label class="block">
+              <span class="text-sm font-medium">Phone</span>
+              <input type="tel" class="mt-1 block w-full rounded-xl border-slate-300 focus:border-brand-600 focus:ring-brand-600" placeholder="(xxx) xxx‑xxxx" />
+            </label>
+            <label class="block">
+              <span class="text-sm font-medium">Message</span>
+              <textarea rows="5" class="mt-1 block w-full rounded-xl border-slate-300 focus:border-brand-600 focus:ring-brand-600" placeholder="Tell us about your property goals"></textarea>
+            </label>
+            <button type="submit" class="mt-2 inline-flex justify-center rounded-xl bg-brand-600 text-white font-semibold px-5 py-3 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-600">Send</button>
+          </form>
+        </div>
+        <div class="space-y-4">
+          <div class="rounded-3xl bg-slate-50 p-6 border border-slate-200">
+            <h3 class="font-semibold">Direct</h3>
+            <p class="mt-1 text-slate-700">Email: <a class="text-brand-700 font-semibold hover:underline" href="mailto:info@juliewrightlandcompany.com">info@juliewrightlandcompany.com</a></p>
+            <p class="text-slate-700">Phone: <a class="text-brand-700 font-semibold hover:underline" href="tel:+19190000000">(919) 000‑0000</a></p>
+          </div>
+          <div class="rounded-3xl bg-slate-50 p-6 border border-slate-200">
+            <h3 class="font-semibold">Office</h3>
+            <p class="mt-1 text-slate-700">Triangle Area, North Carolina</p>
+            <p class="text-slate-700">Appointments by request.</p>
+          </div>
+          <div class="rounded-3xl bg-slate-50 p-6 border border-slate-200">
+            <h3 class="font-semibold">Follow</h3>
+            <div class="mt-2 flex gap-3">
+              <a class="inline-flex items-center gap-2 text-slate-700 hover:text-brand-700" href="#" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5 fill-current"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 .002 6.002A3 3 0 0 0 12 9Zm5.5-.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"/></svg>
+                <span>Instagram</span>
+              </a>
+              <a class="inline-flex items-center gap-2 text-slate-700 hover:text-brand-700" href="#" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5 fill-current"><path d="M13 22v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4Z"/></svg>
+                <span>Facebook</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-4 items-center justify-between">
+      <div class="flex items-center gap-3">
+        <!-- Small logo reuse -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 42" class="h-6 w-auto"><defs><linearGradient id="g2" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#71cc98"/><stop offset="100%" stop-color="#2e6f4d"/></linearGradient></defs><g transform="translate(0,4)"><path d="M0 22 Q 30 4 60 18 T 120 18 T 180 10 L 180 34 L 0 34 Z" fill="url(#g2)" opacity="0.9"/></g><g transform="translate(4,0)"><text x="72" y="28" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="14" fill="#1d4632">JWLC</text></g></svg>
+        <span class="text-slate-600">© <span id="y"></span> Julie Wright Land Company</span>
+      </div>
+      <nav class="text-sm text-slate-600 flex items-center gap-4">
+        <a href="#about" class="hover:text-slate-900">About</a>
+        <a href="#services" class="hover:text-slate-900">Services</a>
+        <a href="#contact" class="hover:text-slate-900">Contact</a>
+        <a href="#" class="hover:text-slate-900">Privacy</a>
+      </nav>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>
